@@ -1,0 +1,84 @@
+.popup
+    &__specification
+        max-width 872px
+
+        h4
+            margin-bottom 4px
+            font-size 20px
+
+        .btn
+            width 160px
+            order 2
+
+        .popup
+            &__dialog
+                padding 56px 52px
+                min-height 100%
+
+                @media(max-width 630px)
+                    padding 56px 24px 24px
+
+        .food-list
+            &__item
+                width 100%
+                display flex
+                justify-content space-between
+
+                @media(max-width 1023px)
+                    opacity 1
+
+                @media(max-width 630px)
+                    flex-direction column
+
+                &-img
+                &-text
+                    width calc(50% - 22px)
+                    display flex
+                    flex-direction column
+
+                    @media(max-width 767px)
+                        width calc(50% - 10px)
+
+                    @media(max-width 630px)
+                        width 100%
+
+                &-img
+                    margin-bottom 0
+
+                    @media(max-width 630px)
+                        margin-bottom 40px
+
+                &-text
+                    strong
+                        font-weight 600
+
+                &-title
+                    font-size 20px
+
+                &-desc
+                    font-size 15px
+
+                &-content
+                    margin-bottom 40px
+
+                    @media(max-width 767px)
+                        margin-bottom 20px
+
+                &-compound
+                &-value
+                    font-size 14px
+
+                &-compound
+                    margin-bottom 70px
+
+                    @media(max-width 767px)
+                        margin-bottom 20px
+
+                &-value
+                    margin-bottom 20px
+
+                &-hidden
+                    display block
+
+                &-diet
+                    order 1

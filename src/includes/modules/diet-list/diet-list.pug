@@ -1,0 +1,21 @@
+include var-diet-list
+
+
+.swiper.diet-list
+    .swiper-wrapper.diet-list__wrapper
+        .swiper-slide.diet-list__item
+            h4 Для взрослых
+            ul
+                each item in dietList
+                    li
+                        img(src= item.img, alt= item.imgAlt)
+                        span= item.text
+
+        .swiper-slide.diet-list__item
+            h4 Для щенков
+            ul
+                each item in dietList2
+                    li
+                        img(src= item.img, alt= item.imgAlt)
+                        span= item.text
+    .swiper-pagination.diet-list__pagination

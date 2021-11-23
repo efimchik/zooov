@@ -1,0 +1,41 @@
+.header
+    padding 10px 0
+    width 100%
+    position fixed
+    top 0
+    left 0
+    z-index 3
+    transition background 300ms 600ms ease, box-shadow 300ms 600ms ease
+
+    .box-center
+        display flex
+        align-items center
+
+    &__logo
+        width 80px
+        flex-shrink  0
+
+        @media(max-width 767px)
+            margin 10px 0 0
+            width 60px
+
+    &--show
+        background-color $white
+        box-shadow 0 1px 5px 0 rgba($black, .2)
+        transition-delay 0
+
+        .nav-list
+            @media(max-width 767px)
+                border-top 2px solid $black
+                border-bottom 2px solid $black
+
+            &--show
+                border 0
+
+            &:before
+            &:after
+                @media(max-width 767px)
+                    background-color $black
+
+            &__link
+                color $black

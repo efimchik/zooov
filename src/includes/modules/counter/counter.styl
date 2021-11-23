@@ -1,0 +1,56 @@
+.field
+    &__number
+        padding 0 5px 0 24px
+        width 100%
+        text-align center
+
+    &-line
+        &__counter
+            width calc(50% - 10px)
+            height 48px
+            display flex
+            align-items center
+            overflow hidden
+            background-color $grey
+            border-radius 8px
+
+            @media(max-width 850px)
+                width calc(100% - 130px)
+
+            @media(max-width 767px)
+                width 100%
+
+            button
+                padding 0
+                width 44px
+                height 100%
+                flex-shrink 0
+                border 0
+                position relative
+                background none
+                cursor pointer
+                tr()
+
+                &:hover
+                    background-color $grey-lighter
+
+                &:before
+                    content ''
+                    width 14px
+                    height 2px
+                    position absolute
+                    top 50%
+                    left 50%
+                    background $grey-superlight
+                    transform translate(-50%, -50%)
+
+                &:last-child
+                    &:after
+                        content ''
+                        width 2px
+                        height 14px
+                        position absolute
+                        top 50%
+                        left 50%
+                        background $grey-superlight
+                        transform translate(-50%, -50%)

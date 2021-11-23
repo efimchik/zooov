@@ -1,0 +1,227 @@
+.section-full
+    &__imgbox
+        position absolute
+
+        &-light
+            width 40px
+            height 51px
+
+        &-left
+            width 150px
+            height 454px
+            right 91%
+            top 50%
+            transform translateY(-40%)
+
+            @media(max-width 1023px)
+                left -5px
+                right auto
+                top auto
+                bottom -145px
+                transform translateY(0)
+                transform rotate(-45deg)
+
+                @media(max-width 767px)
+                    display none
+
+            .section-full__imgbox-light
+                left 52px
+                top 215px
+
+                @media(max-width 1023px)
+                    left 63px
+                    top 250px
+                    transform rotate(32deg)
+
+        &-right
+            width 234px
+            height 290px
+            left 90%
+            top 0
+
+            @media(max-width 1023px)
+                width 180px
+                height 240px
+                top -110px
+                left auto
+                right -40px
+
+            .section-full__imgbox-light
+                left 95px
+                bottom -35px
+                transform rotate(155deg)
+
+                @media(max-width 1023px)
+                    left 55px
+                    bottom -10px
+
+        &-bottom
+            width 234px
+            height 290px
+            display none
+            right 0
+            bottom -85px
+            transform rotate(78deg)
+
+            @media(max-width 1023px)
+                display block
+
+            .section-full__imgbox-light
+                left 40px
+                bottom 10px
+                transform rotate(180deg)
+
+        &-apple
+            width 100px
+            bottom -80px
+            right -110px
+
+            @media(max-width 1023px)
+                bottom -120px
+                right 220px
+
+            @media(max-width 767px)
+                right auto
+                left 50%
+                transform translateX(-110%)
+
+        &-dog
+            width 111px
+            right -145px
+            top 0
+
+            @media(max-width 767px)
+                right auto
+                top 157px
+                left 55%
+
+            @media(max-width 520px)
+                left 75%
+
+        &-meat
+            width 172px
+            right -172px
+            bottom 0
+
+            @media(max-width 767px)
+                right -40px
+                bottom -150px
+
+            .section-full__imgbox-light
+                left 20px
+                top -15px
+                transform rotate(-90deg)
+
+                @media(max-width 767px)
+                    display none
+
+    &__contact
+        color $secondary-color
+        position relative
+        overflow hidden
+        background-color $secondary-bg
+
+        h2
+        h4
+            color $secondary-title
+
+        h2
+            margin-bottom 8px
+
+        h4
+            margin-bottom 4px
+            line-height 140%
+            font-size 20px
+
+        a
+            color $secondary-color
+
+        textarea
+            margin 16px 0 23px
+
+        .btn
+            margin-bottom 16px
+            width 223px
+            height 40px
+            font-size 14px
+
+            img
+                margin-right 8px
+                width 24px
+                height 24px
+
+            &--red
+                background-color rgba($btn-primary-color, .2)
+
+                &:hover
+                    background-color rgba($btn-primary-color, .4)
+
+        .box-center
+            padding-top 80px
+            padding-bottom 80px
+            position relative
+            z-index 1
+
+            @media(max-width 1023px)
+                padding-bottom 240px
+
+            @media(max-width 767px)
+                padding-top 50px
+
+        .section-full
+            &__columns
+                align-items flex-start
+
+                @media(max-width 1023px)
+                    flex-direction row
+
+                @media(max-width 767px)
+                    flex-direction column
+
+            &__column
+                padding-top 80px
+                width 100%
+                max-width 636px
+                position relative
+
+                @media(max-width 1023px)
+                    margin-top 0
+
+                @media(max-width 767px)
+                    max-width 100%
+
+                .section-full__desc
+                    margin-bottom 34px
+
+                &:first-child
+                    margin-right 180px
+                    padding-top 0
+                    max-width 300px
+
+                    @media(max-width 767px)
+                        margin-right 0
+                        margin-bottom 14px
+                        padding-right 60px
+                        max-width 100%
+
+                    .section-full__desc
+                        margin-bottom 0
+
+                p
+                    margin-top 40px
+
+                    a:hover
+                        text-decoration none
+
+        &-btns
+            margin-top 24px
+
+        &-link
+            margin-top 32px
+            display inline-block
+            font-weight 600
+            text-decoration none
+            tr()
+
+            &:hover
+                opacity .7

@@ -1,0 +1,21 @@
+include var-faq-section
+
+
+section.section-full.section-full__faq
+    .box-center
+        .section-full__columns
+            .section-full__column
+                h2 Частые вопросы
+            .section-full__column
+                .section-full__faq-list
+                    each item in faq
+                        if(item.active)
+                            .section-full__faq-item.section-full__faq-item--show
+                                h4!= item.title
+                                .section-full__faq-hidden
+                                    .section-full__faq-content!= item.text
+                        else
+                            .section-full__faq-item
+                                h4!= item.title
+                                .section-full__faq-hidden
+                                    .section-full__faq-content!= item.text

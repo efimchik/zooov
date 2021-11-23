@@ -1,0 +1,90 @@
+.section-full
+    &__faq
+        .box-center
+            padding-top 100px
+            padding-bottom 80px
+
+            @media(max-width 767px)
+                padding-top 0
+
+        .section-full
+            &__columns
+                align-items flex-start
+
+                @media(max-width 1023px)
+                    flex-direction row
+
+                @media(max-width 767px)
+                    flex-direction column
+
+            &__column
+                width calc(35% - 35px)
+
+                @media(max-width 1023px)
+                    margin-top 0
+
+                @media(max-width 767px)
+                    width 100%
+
+                &:last-child
+                    width calc(65% - 35px)
+
+                    @media(max-width 767px)
+                        width 100%
+
+        &-list
+            width 100%
+
+        &-item
+            padding 32px 55px 32px 0
+            position relative
+            border-top 1px solid $faq-border-color
+            box-sizing border-box
+            cursor pointer
+
+            &:before
+            &:after
+                content ''
+                position absolute
+                background-color $secondary-bg
+
+            &:before
+                width 20px
+                height 2px
+                top 41px
+                right 0
+
+            &:after
+                width 2px
+                height 20px
+                top 32px
+                right 9px
+
+            &--show
+                &:after
+                    display none
+
+                .section-full__faq-hidden
+                    max-height 250px
+
+            h4
+                margin 0
+
+            &:first-child
+                padding-top 0
+                border-top 0
+
+                &:before
+                    top 9px
+
+                &:after
+                    top 0
+
+        &-hidden
+            max-height 0
+            height auto
+            overflow hidden
+            transition max-height 500ms ease
+
+        &-content
+            margin-top 12px

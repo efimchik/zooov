@@ -1,0 +1,42 @@
+.popup
+    &__thanksorder
+        max-width 872px
+        height auto
+
+        @media(max-width 630px)
+            height 96%
+
+        @media(max-height 545px)
+            height 96%
+
+        .popup
+            &__dialog
+                padding 56px 52px
+                min-height 100%
+                display flex
+                justify-content space-between
+                align-items center
+
+                @media(max-width 630px)
+                    padding 56px 24px 24px
+                    flex-direction column
+
+            &__desc
+                font-size 15px
+                color $black
+
+                p
+                    margin-top 20px
+
+                    &:first-child
+                        margin-top 0
+
+            &__column
+                width calc(50% - 22px)
+                overflow hidden
+
+                @media(max-width 630px)
+                    width 100%
+
+                    &:first-child
+                        margin-bottom 30px

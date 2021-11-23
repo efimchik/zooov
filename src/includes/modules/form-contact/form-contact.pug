@@ -1,0 +1,14 @@
+form(id="contact-form", class="contact-form", action="", method="POST")
+    .field-line
+        .field-line__area
+            +itputText(inputName)
+            label(class="field__label", for="field-name") Имя
+        .field-line__area
+            +itputText(inputMail)
+            label(class="field__label", for="field-name") Email
+    +textarea(textarea)
+    .field-line
+        .field-line__checkbox
+            +itputCheck(fieldChecbox)
+            label(class="field__checkbox-label", for="agreement") Даю согласие на обработку персональных данных
+        +button(btnSend)

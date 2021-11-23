@@ -1,0 +1,25 @@
+form(class="form-calculation", id="calculation", name="calculation", action="", method="POST")
+    .field-line__radio
+        +itputRadio(fieldRadioAdult)
+        label(for="adult-dog") Взрослая собака
+    .field-line__radio
+        +itputRadio(fieldRadioPuppy)
+        label(for="puppy") Щенок
+    .field-line__area
+        +itputText(inputWeight)
+        label(class="field__label", for="field-weight") Вес (кг)
+    .field-line__area
+        +itputText(inputName)
+        label(class="field__label", for="field-age") Возраст
+    .field-line__area
+        +itputText(inputYourname)
+        label(class="field__label", for="field-yourname") Ваше имя
+    .field-line__area
+        +itputText(inputPhone)
+        label(class="field__label", for="field-name") Телефон
+    +textarea(calcTextarea)
+    .field-line
+        .field-line__checkbox
+            +itputCheck(calcFieldChecbox)
+            label(class="field__checkbox-label", for="calc-agreement") Даю согласие на обработку персональных данных
+    +button(btnCalc)

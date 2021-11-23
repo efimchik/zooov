@@ -1,0 +1,99 @@
+.section-full
+    &__lovezoo
+        width 100%
+        background-color $primary-bg-lignt
+
+        .box-center
+            padding-top 100px
+            padding-bottom 80px
+            background url(../img/svg/vector-collage.svg) no-repeat -12% top
+            background-size auto 100%
+
+            @media(max-width 1023px)
+                background-position -12% bottom
+                background-size 130% auto
+
+            @media(max-width 767px)
+                padding-top 50px
+                padding-bottom 50px
+                padding-right 0
+
+        .section-full__column
+            width calc(50% - 25px)
+
+            h2
+                margin-bottom 40px
+
+                @media(max-width 767px)
+                    margin-bottom 24px
+
+            p
+                margin-top 35px
+
+                @media(max-width 767px)
+                    margin-top 20px
+
+            @media(max-width 1023px)
+                width 80%
+
+            @media(max-width 767px)
+                width 100%
+
+            &:first-child
+                @media(max-width 1023px)
+                    margin-top 40px
+                    order 1
+
+            &:last-child
+                @media(max-width 1023px)
+                    margin-top 0
+
+                @media(max-width 767px)
+                    padding-right 20px
+
+    &__collage
+        width 100%
+        position relative
+        display flex
+        flex-direction column
+
+        &-item
+            &:first-child
+                width 82%
+
+            &:nth-child(2)
+                margin-top -36%
+                margin-left auto
+                width 63%
+
+        &-icon
+            &:first-child
+                width 31%
+                position absolute
+                bottom 12%
+                left -13%
+
+                @media(max-width 1023px)
+                    left 2%
+
+            &:last-child
+                width 21%
+                position absolute
+                top 38%
+                right 8%
+
+                @media(max-width 1023px)
+                    right 0
+
+        // picture
+        //     &:first-child
+        //         img
+        //             margin-right auto
+        //             width 81%
+
+        // img
+        //     &:nth-child(2)
+        //         margin-top -36%
+        //         margin-left auto
+        //         width 61%
+        //         position relative

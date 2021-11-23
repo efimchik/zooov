@@ -1,0 +1,24 @@
+form(class="form-order", id="order", name="order", action="", method="POST")
+    .field-line__area
+        +itputText(inputOrderName)
+        label(class="field__label", for="field-yourname") Имя
+    .field-line__area
+        +itputText(inputOrderPhone)
+        label(class="field__label", for="field-name") Телефон
+    .field-line__area
+        +itputText(inputOrderAddress)
+        label(class="field__label", for="field-weight") Адрес
+
+    .js-select-area
+
+    .field-line.field-line--count
+        label(for="number") Количество:
+        include ./../counter/counter
+    .field-line
+        .field-line__checkbox
+            +itputCheck(orderFieldChecbox)
+            label(class="field__checkbox-label", for="order-agreement") Даю согласие на обработку персональных данных
+    .field-line
+        .popup__price 828
+            span &#8381;
+        +button(btnOrder)

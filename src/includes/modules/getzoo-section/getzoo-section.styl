@@ -1,0 +1,69 @@
+.section-full
+    &__getzoo
+        .box-center
+            padding-top 100px
+            padding-bottom 100px
+
+        .step-list
+            position relative
+
+            @media(max-width 550px)
+                padding-left 24px
+                box-sizing border-box
+
+                &:before
+                    content ''
+                    width 2px
+                    height calc(100% - 106px)
+                    position absolute
+                    top 56px
+                    left 0
+                    background-image linear-gradient(0, $arrow-dashed-grad, $arrow-dashed-grad 75%, transparent 75%, transparent 100%)
+                    background-size 1px 20px
+                    border none
+
+                &:after
+                    content ''
+                    width 8px
+                    height 8px
+                    position absolute
+                    bottom 40px
+                    left -2px
+                    border-right 2px solid $arrow-dashed-grad
+                    border-bottom 2px solid $arrow-dashed-grad
+                    box-sizing border-box
+                    transform rotate(45deg)
+
+            &__item
+                &:before
+                    content ''
+                    width 50%
+                    height 2px
+                    position absolute
+                    top 20px
+                    right 10px
+                    background-image linear-gradient(90deg, $arrow-dashed-grad, $arrow-dashed-grad 75%, transparent 75%, transparent 100%)
+                    background-size 20px 1px
+                    border none
+
+                &:after
+                    content ''
+                    width 8px
+                    height 8px
+                    position absolute
+                    top 17px
+                    right 5px
+                    border-right 2px solid $arrow-dashed-grad
+                    border-bottom 2px solid $arrow-dashed-grad
+                    box-sizing border-box
+                    transform rotate(-45deg)
+
+                &:last-child
+                    &:before
+                    &:after
+                        display none
+
+                @media(max-width 550px)
+                    &:before
+                    &:after
+                        display none

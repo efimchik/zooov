@@ -1,0 +1,30 @@
+mixin button(attr)
+    if(attr.type == 'link')
+        if(attr.icn)
+            a(
+                href= attr.btnUrl,
+                id= attr.id ? attr.id : false,
+                class= attr.className ? attr.className : ''
+            )
+                img(src= attr.icn, alt= attr.icnAlt)
+                span= attr.label
+        else
+            a(
+                href= attr.btnUrl,
+                id= attr.id ? attr.id : false,
+                class= attr.className ? attr.className : ''
+            )= attr.label
+
+    else if (attr.type == 'span')
+        span(
+            id= attr.id ? attr.id : false,
+            class= attr.className ? attr.className : ''
+        )= attr.label
+    else
+        button(
+            id= attr.id ? attr.id : false,
+            class= attr.className ? attr.className : '',
+            type= attr.type ? attr.type : false,
+            name= attr.fieldName ? attr.fieldName : false,
+            disabled= attr.disabled ? '' : false
+        )= attr.label

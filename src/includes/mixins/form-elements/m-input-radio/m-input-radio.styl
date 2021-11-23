@@ -1,0 +1,55 @@
+.field
+    &-line
+        &__radio
+            margin-bottom 12px
+            width 100%
+            position relative
+
+            label
+                padding-left 24px
+                display block
+                line-height 140%
+                font-size 14px
+                white-space nowrap
+                position relative
+                cursor pointer
+
+                &:before
+                &:after
+                    content ''
+                    position absolute
+
+                &:before
+                    margin-top -1px
+                    width 16px
+                    height 16px
+                    top 50%
+                    left 0
+                    border-radius 50%
+                    background-color $fields-primary-bg
+                    border 1px solid $darck-grey
+                    transform translateY(-50%)
+                    box-sizing border-box
+
+                &:after
+                    margin-top -1px
+                    width 10px
+                    height 10px
+                    top 50%
+                    left 3px
+                    opacity 0
+                    border-radius 50%
+                    background-color $red
+                    transform translateY(-50%)
+
+    &__radio
+        position absolute
+        top 0
+        left 0
+        appearance none
+
+        &:checked + label:before
+            border 1px solid $red
+
+        &:checked + label:after
+            opacity 1

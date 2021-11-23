@@ -1,0 +1,209 @@
+$time = 800ms
+
+.section-full__start
+    .btn
+        opacity 0
+        transform translateY(30px)
+        transition opacity $time (($time * 2) - 200) ease,  transform $time (($time * 2) - 200) ease
+
+    h1
+        opacity 0
+        transform translateY(30px)
+        transition opacity $time ($time / 2) ease,  transform $time ($time / 2) ease
+
+    &-desc
+        opacity 0
+        transform translateY(30px)
+        transition opacity $time $time ease,  transform $time $time ease
+
+    &.js-init-animation
+        .btn
+            opacity 1
+            transform translateY(0)
+
+        h1
+            opacity 1
+            transform translateY(0)
+
+        path
+            stroke-dasharray 625
+            stroke-dashoffset 625
+            animation draw $time linear forwards
+            animation-delay (($time * 2) - 200)
+            animation-iteration-count 1
+
+        .section-full__start-desc
+            opacity 1
+            transform translateY(0)
+
+
+.section-full__barf
+    .section-full__column
+        &.js-scroll
+            opacity 0
+            transition opacity $time ease
+
+        &.js-init-animation
+            opacity 1
+
+    h2
+        opacity 0
+        transition opacity $time ease
+
+        &.js-init-animation
+            opacity 1
+
+    .section-full__column-desk
+        opacity 0
+        transition opacity $time ease
+
+        &.js-init-animation
+            opacity 1
+
+    h4
+        opacity 0
+        transition opacity $time ease
+
+        &.js-init-animation
+            opacity 1
+
+    .section-full__list
+        .section-full__list-item
+            opacity 0
+            transition opacity $time ease
+
+        &.js-init-animation
+            .section-full__list-item
+                opacity 1
+
+
+.section-full__food
+    &-header
+        h2
+            opacity 0
+            transform translateY(-30px)
+            transition opacity $time ease,  transform $time ease
+
+        .section-full__food-desc
+            opacity 0
+            transform translateY(30px)
+            transition opacity $time ease,  transform $time ease
+
+        &.js-init-animation
+            h2
+            .section-full__food-desc
+                opacity 1
+                transform translateY(0)
+
+    .food-list
+        .food-list__item
+            .food-list__item-img
+                opacity 0
+                transform translateY(-100px)
+                transition opacity $time ease,  transform $time ease
+
+            .food-list__item-text
+                opacity 0
+                transition opacity $time ($time * 2) ease
+
+            &:nth-child(2)
+                .food-list__item-img
+                    transition-delay ($time / 2)
+
+            &:nth-child(3)
+                .food-list__item-img
+                    transition-delay $time
+
+            &:last-child
+                .food-list__item-img
+                    transition-delay $time * 1.5
+
+    .food-list
+        &.js-init-animation
+            .food-list__item-img
+                opacity 1
+                transform translateY(0)
+
+            .food-list__item-text
+                opacity 1
+
+
+.section-full__whyzoo
+    h2
+        opacity 0
+        transform translateX(140px)
+        transition opacity $time ease,  transform $time ease
+
+    .step-list__item
+        opacity 0
+        transition opacity $time $time ease
+
+    &.js-init-animation
+        h2
+            opacity 1
+            transform translateX(0)
+
+        .step-list__item
+            opacity 1
+
+
+.section-full__getzoo
+    h2
+        opacity 0
+        transform translateX(140px)
+        transition opacity $time ease,  transform $time ease
+
+    .step-list__item
+        opacity 0
+        transition opacity $time $time ease
+
+        &:before
+        &:after
+            opacity 0
+            transition opacity ($time / 4) ($time * 3) ease
+
+        &:nth-child(2)
+            transition-delay ($time * 1.5)
+
+        &:nth-child(3)
+            transition-delay ($time * 2)
+
+        &:last-child
+            transition-delay ($time * 2.5)
+
+    &.js-init-animation
+        h2
+            opacity 1
+            transform translateX(0)
+
+        .step-list__item
+            opacity 1
+
+            &:before
+            &:after
+                opacity 1
+
+
+.section-full__contact
+    .section-full__column
+        opacity 0
+        transform translateY(150px)
+        transition opacity $time ease,  transform $time ease
+
+        &.js-init-animation
+            opacity 1
+            transform translateY(0)
+
+            &:last-child
+                transition-delay $time
+
+                @media(max-width 767px)
+                    transition-delay 0
+
+
+
+
+
+@keyframes draw
+    100%
+        stroke-dashoffset 0

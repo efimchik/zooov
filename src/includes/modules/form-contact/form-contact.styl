@@ -1,0 +1,42 @@
+.field-line
+    width 100%
+    display flex
+    align-items center
+    justify-content space-between
+
+    @media(max-width 1023px)
+        flex-direction column
+        align-items flex-start
+
+    .btn
+        color $form-btn-color
+
+        @media(max-width 1023px)
+            margin auto
+
+        &:hover
+            color $forms-title
+
+    &__area
+        width calc(50% - 12px)
+        height 48px
+        position relative
+        border 1px solid rgba($fields-primary-bg, .5)
+        background-color rgba($fields-primary-bg, .05)
+        border-radius 8px
+        box-sizing border-box
+
+        @media(max-width 1023px)
+            width 100%
+
+            &:first-child
+                margin-bottom 16px
+
+    &__checkbox
+        max-width 265px
+        position relative
+        box-sizing border-box
+
+        @media(max-width 1023px)
+            margin-bottom 16px
+            max-width 100%

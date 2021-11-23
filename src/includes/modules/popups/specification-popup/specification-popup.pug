@@ -1,0 +1,21 @@
+include var-specification-popup
+
+
+
+.popup.popup__specification
+    .popup__close
+    .popup__dialog
+        .food-list__item
+            .food-list__item-img
+                picture
+                    source(srcset, type="image/webp")
+                    img(src, alt="")
+            .food-list__item-text
+                .food-list__item-title
+                .food-list__item-desc
+                .food-list__item-content
+                .food-list__item-diet
+                .food-list__item-hidden
+                    .food-list__item-compound
+                    .food-list__item-value
+                +button(btnSpecification)

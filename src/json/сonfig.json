@@ -1,0 +1,22 @@
+{
+    "global": {
+        "lang": "ru",
+        "title": "Страница HTML",
+        "styles": [
+            "https://unpkg.com/swiper/swiper-bundle.min.css",
+            "./css/main.css"
+        ],
+        "scripts": [
+            "https://unpkg.com/swiper/swiper-bundle.min.js",
+            "./js/main.js"
+        ],
+        "fonts": [
+            "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap",
+            "https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap"
+        ]
+    },
+    "main": {
+        "title": "Главная страница",
+        "description": "Описание главной страницы"
+    }
+}

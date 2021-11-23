@@ -1,0 +1,40 @@
+include var-contact-section
+
+
+section.section-full.section-full__contact
+    .box-center
+        .section-full__columns
+            .section-full__column.js-scroll
+                h2 Контакты
+                .section-full__desc Вы всегда можете с нами связаться по телефону или в мессенджерах
+                a.section-full__contact-link(href="##") +7 (900)000-00-00
+                .section-full__contact-btns
+                    +button(btnWS)
+                    +button(btnTG)
+                p!= 'Подписывайтесь на наш <a href="##">Instagram</a> и следите за новостями'
+                .section-full__imgbox.section-full__imgbox-dog
+                    img(src="./../img/contact-head-dog.png", alt="")
+                .section-full__imgbox.section-full__imgbox-meat
+                    img(src="./../img/meat.png", alt="")
+                    .section-full__imgbox.section-full__imgbox-light
+                        img(src="./../img/svg/light.svg", alt="")
+            .section-full__column.js-scroll
+                h4 Остались вопросы?
+                .section-full__desc Напишите нам и мы обязательно подробно на них ответим.
+                include ./../form-contact/form-contact
+                .section-full__imgbox.section-full__imgbox-apple
+                    img(src="./../img/apple.png", alt="")
+
+
+    .section-full__imgbox.section-full__imgbox-left
+        img(src="./../img/svg/contact-vector-left.svg", alt="")
+        .section-full__imgbox.section-full__imgbox-light
+            img(src="./../img/svg/light.svg", alt="")
+    .section-full__imgbox.section-full__imgbox-right
+        img(src="./../img/svg/contact-vector-right.svg", alt="")
+        .section-full__imgbox.section-full__imgbox-light
+            img(src="./../img/svg/light.svg", alt="")
+    .section-full__imgbox.section-full__imgbox-bottom
+        img(src="./../img/svg/contact-vector-right.svg", alt="")
+        .section-full__imgbox.section-full__imgbox-light
+            img(src="./../img/svg/light.svg", alt="")

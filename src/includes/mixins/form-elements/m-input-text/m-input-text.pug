@@ -1,0 +1,11 @@
+mixin itputText(attr)
+    input(
+        type= attr.type
+        id= attr.id ? attr.id :false
+        class= attr.className ? attr.className : ''
+        name= attr.fieldName ? attr.fieldName : false
+        required= attr.required ? '' : false
+        disabled= attr.disabled ? '' : false
+        value= attr.value ? attr.value : false
+        placeholder= attr.placeholder ? attr.placeholder : false
+    )

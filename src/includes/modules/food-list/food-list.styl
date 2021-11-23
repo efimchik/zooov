@@ -1,0 +1,65 @@
+.food
+    margin-top 80px
+    width 100%
+
+    @media(max-width 767px)
+        margin-top 55px
+
+    .swiper-pagination-bullet
+        background rgba($red, .2)
+
+
+    &-list
+        padding-bottom 80px
+        width 100%
+        display flex
+        justify-content space-between
+
+        &__item
+            width calc(100% / 4)
+
+            @media(max-width 1023px)
+                opacity .5
+
+                &.swiper-slide-next,
+                &.swiper-slide-active
+                    opacity 1
+
+                &.swiper-slide-next
+                    @media(max-width 767px)
+                        opacity .5
+
+            &-img
+                margin-bottom 45px
+                cursor pointer
+
+            &-title
+                margin-bottom 4px
+                line-height 130%
+                color $primary-title
+                font-weight 600
+                cursor pointer
+
+            &-desc
+            &-diet
+                margin-bottom 16px
+                line-height 130%
+                font-size 13px
+                color $secondary-desc-color
+
+            &-diet
+                margin-bottom 24px
+
+            &-content
+                margin-bottom 10px
+                line-height 140%
+                font-size 14px
+
+            &-hidden
+                display none
+
+    .diet-list__pagination
+        bottom 40px !important
+
+        @media(max-width 1023px)
+            width calc(100% - 40px)

@@ -1,0 +1,69 @@
+.section-full
+    &__start
+        width 100%
+        min-height 100vh
+        position relative
+        overflow hidden
+
+        .btn
+            margin-top 25px
+
+            @media(max-width 767px)
+                margin-top 15px
+
+        .box-center
+            padding-top 112px
+            padding-bottom 112px
+            height 100%
+            display flex
+            flex-direction column
+            justify-content center
+            position absolute
+            top 0
+            left 50%
+            box-sizing border-box
+            transform translateX(-50%)
+
+            @media(max-width 767px)
+                padding-top 90px
+                padding-bottom 45px
+
+        img
+            fit()
+
+        &-content
+            max-width 395px
+
+            @media(max-width 767px)
+                max-width 100%
+
+        &-desc
+            margin-top 10px
+            line-height 140%
+            font-size 20px
+            color $secondary-title
+
+        h1
+
+            strong
+                position relative
+                z-index 1
+
+                &:last-child
+                    position static
+
+            span
+                display inline-block
+                position relative
+
+                @media(max-width 767px)
+                    margin-right 7px
+
+        svg
+            width 130%
+            position absolute
+            top -7px
+            left -24px
+
+            @media(max-width 767px)
+                top -20px

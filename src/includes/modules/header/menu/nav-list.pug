@@ -1,0 +1,38 @@
+-
+    let navItems = [
+        {
+            link: "##",
+            title: "BARF"
+        },
+        {
+            link: "##",
+            title: "Рационы"
+        },
+        {
+            link: "##",
+            title: "ZOOOV"
+        },
+        {
+            link: "##",
+            title: "О нас"
+        },
+        {
+            link: "##",
+            title: "Доставка"
+        },
+        {
+            link: "##",
+            title: "FAQ"
+        },
+        {
+            link: "##",
+            title: "Контакты"
+        },
+    ]
+
+
+nav.nav-list
+    ul.nav-list__box
+        each item in navItems
+            li.nav-list__item
+                a.nav-list__link(href=item.link)= item.title

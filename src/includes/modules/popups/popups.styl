@@ -1,0 +1,119 @@
+.popup
+    width 96%
+    height auto
+    max-height 96%
+    position fixed
+    top 50%
+    left 50%
+    z-index 4
+    overflow-y auto
+    opacity 0
+    visibility hidden
+    transform translate(-50%, -50%)
+    transition all 800ms ease
+
+    &--delay
+        transition-delay 300ms
+
+    h2
+        margin-bottom 16px
+        color $popup-title
+
+        @media(max-width 767px)
+            font-size 32px
+
+    .field
+        color $black
+
+        &__label
+            color rgba($black, .6)
+
+        &-line
+            &__area
+                margin-top 16px
+                width 100%
+                background-color $grey
+
+            &__checkbox
+                max-width 100%
+
+        &__count
+            padding 0 5px
+            text-align center
+
+        &__checkbox
+            &:checked + label:before
+                border 1px solid $red
+
+            &-label
+                &:before
+                    border 1px solid $grey-light
+
+    &__close
+        width 32px
+        height 32px
+        position absolute
+        top 16px
+        right 16px
+        z-index 1
+        cursor pointer
+        tr()
+
+        &:before
+        &:after
+            content ''
+            margin-top -1px
+            width 100%
+            height 2px
+            position absolute
+            top 50%
+            left 0
+            background-color $menu-link
+
+        &:before
+            transform rotate(45deg)
+
+        &:after
+            transform rotate(-45deg)
+
+        &:hover
+            opacity .4
+
+    &__dialog
+        padding 56px
+        width 100%
+        background-color $popup-bg
+        box-sizing border-box
+        opacity 0
+        transform translateY(-100%)
+        transition all 800ms ease
+
+        @media(max-width 767px)
+            padding 72px 24px 40px
+
+    &__desc
+        margin-bottom 40px
+        line-height 130%
+        font-size 15px
+        color $menu-link
+
+        @media(max-width 767px)
+            margin-bottom 34px
+
+        a
+            color $red
+
+            &:hover
+                text-decoration none
+
+.popup__overlay
+    width 100%
+    height 100%
+    position fixed
+    top 0
+    left 0
+    z-index 3
+    opacity 0
+    visibility hidden
+    background-color rgba($dark-bg, .4)
+    tr()

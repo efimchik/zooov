@@ -1,0 +1,39 @@
+.footer
+    width 100%
+    line-height 140%
+    font-size 12px
+    color rgba($secondary-color, .4)
+    background $footer-bg
+
+    .box-center
+        padding-top 30px
+        padding-bottom 30px
+        display flex
+        align-items center
+        justify-content space-between
+
+        @media(max-width 767px)
+            flex-direction column
+            align-items flex-start
+
+    a
+        color rgba($secondary-color, .4)
+        text-decoration none
+        tr()
+
+        &:hover
+            color $secondary-color
+
+    &__text
+        margin-left 20px
+        white-space nowrap
+
+        @media(max-width 767px)
+            margin 0 0 8px 0
+
+        &:first-child
+            margin-left 0
+            white-space normal
+
+            @media(max-width 767px)
+                margin 0 0 24px 0

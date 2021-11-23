@@ -1,0 +1,36 @@
+.section-full
+    &__barf
+        .box-center
+            padding-top 180px
+            padding-bottom 80px
+
+            @media(max-width 1023px)
+                padding-top 80px
+
+    &__columns
+        display flex
+        justify-content space-between
+        align-items center
+
+        @media(max-width 1023px)
+            flex-direction column
+
+    &__column
+        width calc(50% - 14px)
+        box-sizing border-box
+
+        @media(max-width 1023px)
+            width 100%
+
+        &:last-child
+            @media(max-width 1023px)
+                margin-top 40px
+
+        h2
+            margin-bottom 32px
+
+        h4
+            margin-bottom 16px
+
+        &-desk
+            margin-bottom 24px

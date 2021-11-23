@@ -1,0 +1,32 @@
+.btn
+    padding 1px 0 0
+    width 226px
+    height 48px
+    display flex
+    justify-content center
+    align-items center
+    font-size 16px
+    text-align center
+    line-height 140%
+    color $btn-primary-color
+    font-weight 600
+    text-decoration none
+    border-radius 8px
+    border 0
+    box-sizing border-box
+    tr()
+    cursor pointer
+
+    &--red
+        background-color $btn-primary-bg
+
+        &:hover
+            background-color $btn-primary-hover-bg
+
+    &--white
+        color $btn-secondary-color
+        background-color $btn-secondary-bg
+        border 1px solid $btn-primary-bg
+
+        &:hover
+            background-color $btn-secondary-hover-bg

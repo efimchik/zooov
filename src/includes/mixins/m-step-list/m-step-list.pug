@@ -1,0 +1,9 @@
+mixin stepList(params)
+    ul.step-list
+        each item in params
+            li.step-list__item
+                .step-list__icn
+                    img(src= item.icn, alt= item.icnAlt)
+                .step-list__text
+                    .step-list__title= item.title
+                    .step-list__desc!= item.desc

@@ -1,0 +1,19 @@
+include var-food-list
+
+
+.swiper.food
+    .swiper-wrapper.food-list.js-scroll
+        each item in foodItems
+            .swiper-slide.food-list__item
+                .food-list__item-img
+                    img(src= item.img, alt= item.imgAlt)
+                .food-list__item-text
+                    .food-list__item-title!= item.title
+                    .food-list__item-desc!= item.desc
+                    .food-list__item-content!= item.content
+                    .food-list__item-diet!= item.weight
+                    .food-list__item-hidden
+                        .food-list__item-compound!= item.compound
+                        .food-list__item-value!= item.value
+                    +button(btnOrder)
+    .swiper-pagination.diet-list__pagination

@@ -1,0 +1,13 @@
+include var-order-popup
+
+
+.popup.popup__order
+    .popup__close
+    .popup__dialog
+        .popup__column
+            img(src="./img/food-list-1.jpg", alt="")
+        .popup__column
+            h4 Для взрослых собак
+            .popup__desc!= 'Баранина/Кролик'
+
+            include  ./../../form-order/form-order

@@ -1,0 +1,42 @@
+extends ./../includes/templates/landing/landing
+block config
+    - let params = meta.main
+
+
+
+append fonts
+
+prepend styles
+
+append styles
+
+append headScripts
+
+
+block content
+    include ./../includes/mixins/form-elements/m-button/m-button
+    include ./../includes/mixins/form-elements/m-input-text/m-input-text
+    include ./../includes/mixins/form-elements/m-input-checkbox/m-input-checkbox
+    include ./../includes/mixins/form-elements/m-input-radio/m-input-radio
+    include ./../includes/mixins/form-elements/m-textarea/m-textarea
+
+    include ./../includes/modules/header/header
+    include ./../includes/modules/first-section/first-section
+    include ./../includes/modules/barf-section/barf-section
+    include ./../includes/modules/food-section/food-section
+    include ./../includes/modules/whyzoo-section/whyzoo-section
+    include ./../includes/modules/lovezoo-section/lovezoo-section
+    include ./../includes/modules/getzoo-section/getzoo-section
+    include ./../includes/modules/faq-section/faq-section
+    include ./../includes/modules/contact-section/contact-section
+    include ./../includes/modules/footer/footer
+
+    include ./../includes/modules/popups/calculation-popup/calculation-popup
+    include ./../includes/modules/popups/order-popup/order-popup
+    include ./../includes/modules/popups/specification-popup/specification-popup
+    include ./../includes/modules/popups/thanks-order-popup/thanks-order-popup
+    include ./../includes/modules/popups/thanks-contact-popup/thanks-contact-popup
+    .popup__overlay
+
+
+append scripts
