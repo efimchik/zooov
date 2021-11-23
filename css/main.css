@@ -845,11 +845,11 @@ img {
    top: 0;
    left: 0;
    z-index: 3;
-   -webkit-transition: background 300ms 600ms ease, -webkit-box-shadow 300ms 600ms ease;
-   transition: background 300ms 600ms ease, -webkit-box-shadow 300ms 600ms ease;
-   -o-transition: background 300ms 600ms ease, box-shadow 300ms 600ms ease;
-   transition: background 300ms 600ms ease, box-shadow 300ms 600ms ease;
-   transition: background 300ms 600ms ease, box-shadow 300ms 600ms ease, -webkit-box-shadow 300ms 600ms ease;
+   -webkit-transition: background 300ms 300ms ease, -webkit-box-shadow 300ms 300ms ease;
+   transition: background 300ms 300ms ease, -webkit-box-shadow 300ms 300ms ease;
+   -o-transition: background 300ms 300ms ease, box-shadow 300ms 300ms ease;
+   transition: background 300ms 300ms ease, box-shadow 300ms 300ms ease;
+   transition: background 300ms 300ms ease, box-shadow 300ms 300ms ease, -webkit-box-shadow 300ms 300ms ease;
 }
 
 .header .box-center {
@@ -894,9 +894,9 @@ img {
 
 .nav-list--show .nav-list__box {
    right: 0;
-   -webkit-transition: right 300ms 600ms ease;
-   -o-transition: right 300ms 600ms ease;
-   transition: right 300ms 600ms ease;
+   -webkit-transition: right 300ms 300ms ease;
+   -o-transition: right 300ms 300ms ease;
+   transition: right 300ms 300ms ease;
 }
 
 .nav-list__box {
@@ -922,9 +922,9 @@ img {
    text-decoration: none;
    white-space: nowrap;
    border-bottom: 1px solid transparent;
-   -webkit-transition: color 300ms 600ms ease;
-   -o-transition: color 300ms 600ms ease;
-   transition: color 300ms 600ms ease;
+   -webkit-transition: color 300ms 300ms ease;
+   -o-transition: color 300ms 300ms ease;
+   transition: color 300ms 300ms ease;
 }
 
 .nav-list__link:hover {
@@ -1810,9 +1810,11 @@ img {
    -webkit-transform: translate(-50%, -50%);
    -ms-transform: translate(-50%, -50%);
    transform: translate(-50%, -50%);
-   -webkit-transition: all 800ms ease;
-   -o-transition: all 800ms ease;
-   transition: all 800ms ease;
+   -webkit-transition: opacity 800ms ease, -webkit-transform 800ms ease;
+   transition: opacity 800ms ease, -webkit-transform 800ms ease;
+   -o-transition: opacity 800ms ease, transform 800ms ease;
+   transition: opacity 800ms ease, transform 800ms ease;
+   transition: opacity 800ms ease, transform 800ms ease, -webkit-transform 800ms ease;
 }
 
 .popup--delay {
@@ -1865,9 +1867,9 @@ img {
    right: 16px;
    z-index: 1;
    cursor: pointer;
-   -webkit-transition: all 300ms ease;
-   -o-transition: all 300ms ease;
-   transition: all 300ms ease;
+   -webkit-transition: opacity 300ms ease;
+   -o-transition: opacity 300ms ease;
+   transition: opacity 300ms ease;
 }
 
 .popup__close:before,
@@ -1938,9 +1940,9 @@ img {
    opacity: 0;
    visibility: hidden;
    background-color: rgba(0,0,0,0.4);
-   -webkit-transition: all 300ms ease;
-   -o-transition: all 300ms ease;
-   transition: all 300ms ease;
+   -webkit-transition: opacity 300ms ease, visibility 300ms ease;
+   -o-transition: opacity 300ms ease, visibility 300ms ease;
+   transition: opacity 300ms ease, visibility 300ms ease;
 }
 
 .popup__calculation {
@@ -2600,9 +2602,9 @@ img {
       border-top: 2px solid #fff;
       border-bottom: 2px solid #fff;
       cursor: pointer;
-      -webkit-transition: border-color 300ms 600ms ease;
-      -o-transition: border-color 300ms 600ms ease;
-      transition: border-color 300ms 600ms ease;
+      -webkit-transition: border-color 300ms 300ms ease;
+      -o-transition: border-color 300ms 300ms ease;
+      transition: border-color 300ms 300ms ease;
    }
 
    .nav-list:before,
@@ -2614,9 +2616,9 @@ img {
       position: absolute;
       top: 50%;
       background-color: #fff;
-      -webkit-transition: background 300ms 600ms ease;
-      -o-transition: background 300ms 600ms ease;
-      transition: background 300ms 600ms ease;
+      -webkit-transition: background 300ms 300ms ease;
+      -o-transition: background 300ms 300ms ease;
+      transition: background 300ms 300ms ease;
    }
 
    .nav-list--show:before {

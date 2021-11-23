@@ -10,7 +10,7 @@
     opacity 0
     visibility hidden
     transform translate(-50%, -50%)
-    transition all 800ms ease
+    transition opacity 800ms ease, transform 800ms ease
 
     &--delay
         transition-delay 300ms
@@ -57,7 +57,7 @@
         right 16px
         z-index 1
         cursor pointer
-        tr()
+        transition opacity 300ms ease
 
         &:before
         &:after
@@ -116,4 +116,4 @@
     opacity 0
     visibility hidden
     background-color rgba($dark-bg, .4)
-    tr()
+    transition opacity 300ms ease, visibility 300ms ease
