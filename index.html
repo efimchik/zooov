@@ -19,7 +19,10 @@
         <header class="header">
             <div class="box-center">
                 <div class="header__logo">
-                    <img src="./img/home/logo-white-bg@x2.png" alt="Zooov" />
+                    <picture>
+                        <source srcset="./img/home/logo-white-bg@x2.webp" type="image/webp" />
+                        <img src="./img/home/logo-white-bg@x2.png" alt="Zooov" />
+                    </picture>
                 </div>
                 <nav class="nav-list">
                     <ul class="nav-list__box">
@@ -569,6 +572,99 @@
                 </form>
             </div>
         </div>
+        <div class="popup popup__order">
+            <div class="popup__close"></div>
+            <div class="popup__dialog">
+                <div class="popup__column">
+                    <img src="./img/food-list-1.jpg" alt="" />
+                </div>
+                <div class="popup__column">
+                    <h4>Для взрослых собак</h4>
+                    <div class="popup__desc">Баранина/Кролик</div>
+                    <form class="form-order" id="order" name="order" action="" method="POST">
+                        <div class="field-line__area">
+                            <input class="field field__ordername" type="text" id="field-order-name" name="field-order-name" placeholder=" " />
+                            <label class="field__label" for="field-yourname">Имя</label>
+                        </div>
+                        <div class="field-line__area">
+                            <input class="field field__orderphone" type="text" id="field-order-phone" name="field-order-phone" placeholder=" " />
+                            <label class="field__label" for="field-name">Телефон</label>
+                        </div>
+                        <div class="field-line__area">
+                            <input class="field field__orderaddress" type="text" id="field-order-address" name="field-order-address" placeholder=" " />
+                            <label class="field__label" for="field-weight">Адрес</label>
+                        </div>
+                        <div class="js-select-area"></div>
+                        <div class="field-line field-line--count">
+                            <label for="number">Количество:</label>
+                            <div class="field-line__counter">
+                                <button type="button" onclick="this.nextElementSibling.stepDown()"></button>
+                                <input class="field field__number" type="number" min="1" max="20" value="1" readonly="readonly" name="number" />
+                                <button type="button" onclick="this.previousElementSibling.stepUp()"></button>
+                            </div>
+                        </div>
+                        <div class="field-line">
+                            <div class="field-line__checkbox">
+                                <input class="field__checkbox" type="checkbox" id="order-agreement" name="order-agreement" checked="" />
+                                <label class="field__checkbox-label" for="order-agreement">Даю согласие на обработку персональных данных</label>
+                            </div>
+                        </div>
+                        <div class="field-line">
+                            <div class="popup__price">828<span>&#8381;</span>
+                            </div>
+                            <button class="btn btn--white" type="submit" name="sendOrder">Оформить заказ</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="popup popup__specification">
+            <div class="popup__close"></div>
+            <div class="popup__dialog">
+                <div class="food-list__item">
+                    <div class="food-list__item-img">
+                        <picture>
+                            <source srcset="" type="image/webp" />
+                            <img src="" alt="" />
+                        </picture>
+                    </div>
+                    <div class="food-list__item-text">
+                        <div class="food-list__item-title"></div>
+                        <div class="food-list__item-desc"></div>
+                        <div class="food-list__item-content"></div>
+                        <div class="food-list__item-diet"></div>
+                        <div class="food-list__item-hidden">
+                            <div class="food-list__item-compound"></div>
+                            <div class="food-list__item-value"></div>
+                        </div>
+                        <button class="btn btn--white js-order" type="button" name="sendSpecification">Заказать</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup popup__thanksorder">
+            <div class="popup__close"></div>
+            <div class="popup__dialog">
+                <div class="popup__column">
+                    <img src="./img/food-list-1.jpg" alt="" />
+                </div>
+                <div class="popup__column">
+                    <h2>Спасибо!</h2>
+                    <div class="popup__desc">
+                        <p>Ваш заказ оформлен и передан менеджеру. Мы свяжемся с вами для уточнения и подтверждения в ближайшее время.</p>
+                        <p>Если вы захотите дополнить свой заказ или уточнить какие-то детали – вы сможете это сделать у оператора.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup popup__thankscontact">
+            <div class="popup__close"></div>
+            <div class="popup__dialog">
+                <h2>Спасибо!</h2>
+                <div class="popup__desc">Мы ответим вам в ближайшее время.</div>
+            </div>
+        </div>
+        <div class="popup__overlay"></div>
     </div>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
