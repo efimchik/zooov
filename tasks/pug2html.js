@@ -50,7 +50,7 @@ module.exports = function pug2html(cb) {
                 meta: JSON.parse(fs.readFileSync(path.src.json, 'utf8'))
             }
         }))
-        .pipe(webphtml())
+        // .pipe(webphtml())
         .pipe(glpif(!argv.prod, prettify({
             indent_size: 4
         })))

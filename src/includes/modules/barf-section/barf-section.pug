@@ -12,6 +12,8 @@ section.section-full.section-full__barf
                     li.section-full__list-item Появляется больше энергии
                     li.section-full__list-item Увеличивается продолжительность жизни
             .section-full__column.js-scroll
-                img(src="img/barf.jpg", alt="Buff")
+                picture
+                    source(srcset="./img/barf.webp", type="image/webp")
+                    img(src="./img/barf.jpg", alt="Buff")
 
         include ./../diet-list/diet-list

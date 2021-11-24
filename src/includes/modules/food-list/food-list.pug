@@ -6,7 +6,9 @@ include var-food-list
         each item in foodItems
             .swiper-slide.food-list__item
                 .food-list__item-img
-                    img(src= item.img, alt= item.imgAlt)
+                    picture
+                        source(srcset= item.webp, type="image/webp")
+                        img(src= item.img, alt= item.imgAlt)
                 .food-list__item-text
                     .food-list__item-title!= item.title
                     .food-list__item-desc!= item.desc

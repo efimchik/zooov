@@ -25,7 +25,7 @@ const clean = require('./tasks/clean')
 
 
 
-const dev = gulp.parallel(pug2html, styl, script, webpcompress, svgcompress, imgcopy, csscopy, jscopy, fontcopy);
+const dev = gulp.parallel(pug2html, styl, script, webpcompress, svgcompress, imgcompress, imgcopy, csscopy, jscopy);
 const build = gulp.parallel(pug2html, styl, script, imgcompress, webpcompress, svgcompress, csscopy, jscopy, fontcopy);
 
 
