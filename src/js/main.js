@@ -7,3 +7,4 @@ let btnMobMenu = document.querySelector('.nav-list');
 @@include('./partial/init-accardion.js')
 @@include('./partial/init-mobMenu.js')
 @@include('./partial/init-animate.js')
+@@include('./partial/init-popups.js')
