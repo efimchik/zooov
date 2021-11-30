@@ -1,0 +1,96 @@
+html
+    font-size 62.5%
+
+html,
+body
+    height 100%
+
+body
+    min-width 320px
+    font-family 'Montserrat', sans-serif
+    line-height 140%
+    font-size 16px
+    font-weight 400
+    color $primary-color
+
+h1
+    font-family 'Oswald', sans-serif
+    line-height 130%
+    font-size 54px
+    font-weight 700
+    color $secondary-title
+    letter-spacing .02px
+
+    @media(max-width 767px)
+        line-height 120%
+        font-size 44px
+
+h2
+    font-family 'Oswald', sans-serif
+    line-height 130%
+    font-size 46px
+    font-weight 700
+    color $primary-title
+    letter-spacing .02px
+
+    @media(max-width 767px)
+        font-size 40px
+
+h4
+    line-height 130%
+    font-size 18px
+    font-weight 600
+    color $primary-title
+
+img
+    width 100%
+    display block
+
+.box-center
+    margin 0 auto
+    padding 0 60px
+    max-width 1320px
+    width 100%
+    box-sizing border-box
+
+    @media(max-width 1023px)
+        padding 0 40px
+
+    @media(max-width 767px)
+        padding 0 20px
+
+.section-full
+    width 100%
+    position relative
+    overflow hidden
+
+    &__list
+        &-item
+            margin-top 15px
+            padding-left 12px
+            position relative
+
+            &:before
+                content ''
+                width 6px
+                height 6px
+                position absolute
+                top 7px
+                left 0
+                border-radius 50%
+                background-color $marker-list-bg
+
+            &:first-child
+                margin-top 0
+
+
+
+.swiper-pagination-bullet
+    width 8px
+    height 8px
+    opacity 1
+    box-sizing border-box
+    cursor pointer
+
+    &-active
+        background $red !important

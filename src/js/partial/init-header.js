@@ -1,4 +1,8 @@
 //add/remove bg to header on horizontal scroll
+let headerBox = document.querySelector('.header');
+let btnMobMenu = document.querySelector('.nav-list');
+
+
 function toggleClassOnScroll(el, pxAmount) {
 
     let topScroll = document.documentElement.scrollTop;

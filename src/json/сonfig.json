@@ -1,14 +1,14 @@
 {
     "global": {
         "lang": "ru",
-        "title": "Страница HTML",
+        "title": "Страница PUG",
         "styles": [
-            "https://unpkg.com/swiper/swiper-bundle.min.css",
-            "./css/main.css"
+            "./css/swiper-bundle.min.css",
+            "./css/main.min.css"
         ],
         "scripts": [
-            "https://unpkg.com/swiper/swiper-bundle.min.js",
-            "./js/main.js"
+            "./js/swiper-bundle.min.js",
+            "./js/main.min.js"
         ],
         "fonts": [
             "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap",
@@ -16,7 +16,8 @@
         ]
     },
     "main": {
-        "title": "Главная страница",
-        "description": "Описание главной страницы"
+        "title": "Zooov",
+        "description": "Продажа питания для животных",
+        "menuIndex": 0
     }
 }

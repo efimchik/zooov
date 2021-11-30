@@ -1,4 +1,7 @@
 //open/close mob menu on click to mob nav btn
+let btnMobMenu = document.querySelector('.nav-list');
+let headerBox = document.querySelector('.header');
+
 btnMobMenu.addEventListener('click', function() {
 
     let positionTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
